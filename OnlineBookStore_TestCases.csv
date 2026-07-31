@@ -1,0 +1,31 @@
+Test Case ID,Test Scenario,Test Steps,Expected Result,Priority,Test Type,Status
+TC001,Register with valid details,Open Register page > Enter valid details > Click Register,User account is created successfully.,High,Smoke,Pass
+TC002,Register with existing email,Open Register > Enter existing email > Submit,Error message 'Email already exists'.,High,Negative,Pass
+TC003,Login with valid credentials,Open Login > Enter valid credentials > Login,User logs in successfully.,High,Smoke,Pass
+TC004,Login with invalid password,Enter valid email and invalid password,Validation error displayed.,High,Negative,Fail
+TC005,Logout,Click Logout,User is logged out.,Medium,Regression,Pass
+TC006,View book catalog,Open Catalog page,Books are displayed.,High,Smoke,Pass
+TC007,Search by book title,Search a valid title,Matching books displayed.,High,Smoke,Pass
+TC008,Search nonexistent book,Search invalid title,No results found message.,Medium,Negative,Pass
+TC009,Filter books by category,Select category,Filtered books displayed.,Medium,Regression,Pass
+TC010,View book details,Open a book,Book details page opens.,High,Regression,Pass
+TC011,Add book to cart,Click Add to Cart,Book added to cart.,High,Smoke,Pass
+TC012,Update cart quantity,Change quantity,Cart updates correctly.,Medium,Regression,Pass
+TC013,Remove book from cart,Remove item,Item removed.,Medium,Regression,Pass
+TC014,Checkout with valid details,Proceed to checkout and confirm,Order placed successfully.,High,Smoke,Pass
+TC015,Checkout without address,Leave address empty and submit,Address validation shown.,High,Negative,Fail
+TC016,Order confirmation,Complete checkout,Confirmation page displayed.,High,Regression,Pass
+TC017,View order history,Open My Orders,Orders displayed.,Medium,Regression,Pass
+TC018,Session timeout,Remain idle then interact,User redirected to login.,Low,Regression,Blocked
+TC019,Access protected page without login,Open protected URL,Redirected to login.,High,Negative,Pass
+TC020,Password hidden,Type password,Password masked.,Medium,Regression,Pass
+TC021,Responsive homepage,Resize browser,Layout adjusts correctly.,Low,Regression,Pass
+TC022,Invalid email format,Enter invalid email,Validation displayed.,Medium,Negative,Pass
+TC023,Empty cart checkout,Checkout with empty cart,Checkout prevented.,High,Negative,Blocked
+TC024,Add multiple books,Add different books,All items added.,Medium,Regression,Pass
+TC025,Increase quantity beyond stock,Enter excessive quantity,Stock validation shown.,High,Negative,Pass
+TC026,Sort books by price,Choose sort option,Books sorted.,Low,Regression,Pass
+TC027,Search using special characters,Search @#$,Handled gracefully.,Low,Negative,Pass
+TC028,Refresh cart page,Refresh after adding item,Cart data retained.,Medium,Regression,Pass
+TC029,Duplicate checkout click,Click Place Order twice,Only one order created.,Medium,Automation Candidate,Pass
+TC030,Login after logout,Logout then login again,Login works successfully.,Medium,Automation Candidate,Pass
